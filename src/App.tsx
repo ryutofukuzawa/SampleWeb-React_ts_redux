@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TopPageContainer from './containers/TopPageContainer';
+import TopPageContainer from './container/TopPageContainer';
 
 const App: React.FC = () => {
-  return(
+  return (
     <React.Fragment>
       <TopPageContainer/>
     </React.Fragment>

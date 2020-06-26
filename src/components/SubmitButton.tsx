@@ -1,15 +1,14 @@
 import React from 'react'
 
 interface OwnProps {
-  title: string
-  onClick: Function
+    title: string
+    onClick: Function
 }
-
 type Props = OwnProps
-export const SubmitButton: React.FC<Props> = props => {
-  return(
-    <div>
-      <button onClick={() => props.onClick()}>{props.title}</button>
-    </div>
-  )
+export const SubmitButton : React.FC<Props> = props => {
+    return(
+        <div>
+            <button onClick={() => props.onClick()}>{props.title}</button>
+        </div>
+    )
 }

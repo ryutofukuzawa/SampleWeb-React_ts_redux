@@ -1,6 +1,6 @@
 import React from 'react'
 import { TextInput } from './TextInput';
-import { TopPageHandler } from '../containers/TopPageContainer';
+import { TopPageHandler } from '../container/TopPageContainer';
 import { RadioInput } from './RadioInput';
 import { ShowState } from './ShowState';
 import { SubmitButton } from './SubmitButton';
@@ -20,6 +20,7 @@ export class TopPageForm extends React.Component<Props> {
                 <RadioInput title='ラジオ' selectedValue={this.props.selectedValue} onChangeValue={this.props.handleOnSelectValue}/>
                 <SubmitButton title='Click me' onClick={this.props.handleOnClick}/>
                 <ShowState inputValue={this.props.inputValue} selectedValue={this.props.selectedValue} clickCount={this.props.clickCount}/>
+
             </React.Fragment>
         )
     }
